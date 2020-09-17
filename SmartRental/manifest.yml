@@ -1,0 +1,11 @@
+ applications:
+ # Application
+ - name: smartRental
+   instances: 1
+   memory: 1000M
+   disk_quota: 500M
+   host: smartRental-PCIL
+   path: /Users/c5218871/SmartRental/
+   buildpack: https://github.com/cloudfoundry/buildpack-nodejs#v1.6.5
+   services:
+   - mongo-service
